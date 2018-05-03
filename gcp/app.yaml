@@ -1,6 +1,6 @@
 runtime: python
 env: flex
-entrypoint: python hubspot-api-eng.py
+entrypoint: python hubspot-api-eng-OLD.py
 service: alooma
 
 runtime_config:

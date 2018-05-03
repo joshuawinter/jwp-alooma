@@ -1,7 +1,5 @@
 # jwp-alooma tech eval
 
-
-
 This solution was designed for the following requirements:
 
 1. Pull Data from Hubspot.  Using their API and Python, build out logic to extract Engagement data from their endpoint.
