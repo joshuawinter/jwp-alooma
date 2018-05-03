@@ -2,11 +2,12 @@
 use alooma;
 # DROP TABLE engagements;
 CREATE TABLE if not exists engagements (
-  id int(11) DEFAULT NULL,
+  id int(11),
   portalI int(11) DEFAULT NULL,
   createdAt bigint(20) DEFAULT NULL,
   lastUpdated bigint(20) DEFAULT NULL,
-  type text
+  `type` text,
+  primary key(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ;
 # Load Data to cloud mart
@@ -46,4 +47,5 @@ a.createdAt
          ),2) as '14dayMovingAvg'
 from vw_engagement as a
 group by a.createdAt, a.type
-order by a.createdAt;
+order by a.createdAt
+;
